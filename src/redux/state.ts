@@ -19,7 +19,7 @@ export type ProfileType ={
     posts: PostType[]
 }
 export type SidebarType = {}
-type RootStateType ={
+export type RootStateType ={
     profilePage:ProfileType
     dialogsPage:DialogsPageType
     sidebar: SidebarType
