@@ -11,16 +11,23 @@ import {PostType, ProfileType} from "../../../redux/state";
 
 const MyPosts = (props:ProfileType) => {
     const postsElements = props.posts.map(p=> <Post message={p.message} likesCount={p.likesCount}/>)
+    let newPostElement:any= React.createRef();
+    let addPost = ()=> {
+        // alert('JS.com')
+        // let text = document.getElementById('new-post').value;
+        let text = newPostElement.current.value;
+            alert(text)
+    }
 
   return (
         <div className={s.postsBlock}>
           <h3>My posts</h3>
           <div>
             <div>
-              <textarea></textarea>
+              <textarea ref={newPostElement}></textarea>
             </div>
             <div>
-              <button>Add post</button>
+              <button onClick={ addPost }>Add post</button>
             </div>
           </div>
           <div className={s.posts}>

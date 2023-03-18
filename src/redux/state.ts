@@ -53,4 +53,10 @@ let state:RootStateType = {
     sidebar:{}
 }
 
+/*let addPost = (postMessage) => {
+    let newPost = {
+
+    }
+}*/
+
 export default state
