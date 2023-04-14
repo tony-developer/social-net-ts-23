@@ -8,7 +8,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import Dialogs from "./components/Dialogs/Dialogs";
-import state, {RootStateType, updateNewPostText} from "./redux/state";
+import {RootStateType} from "./redux/state";
 
 export type PropsAppType = {
     state: RootStateType
