@@ -6,8 +6,6 @@ import './index.css';
 import store from './redux/state'
 import {BrowserRouter} from "react-router-dom";
 
-// addPost('Hi Bob!')
-
 let rerenderEntireTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
